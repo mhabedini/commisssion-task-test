@@ -3,6 +3,8 @@
 ## How to install
 ```
 composer i
+cp .env.example .env
+php artisan key:generate
 ```
 
 ## How to use

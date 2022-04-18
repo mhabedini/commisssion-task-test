@@ -1,5 +1,7 @@
 # Commission Fee Task
 
+## Minimum requirements:
+1. php 8.1
 ## How to install
 ```
 composer i

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommissionFeeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [CommissionFeeController::class, 'create']);
+Route::post('/transactions', [CommissionFeeController::class, 'storeWeb']);
+
